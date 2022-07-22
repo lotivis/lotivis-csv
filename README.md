@@ -100,7 +100,7 @@ Fetches and parses the data from the csv files specified through the given `path
 
 ### `lotivis.`**[`csvFetchRows`](./src/fetch.js)**`(path [, row])`
 
-Fetches and parses the data from the csv files specified through the given `path`. The `row` argument works in a simulary manner as in [csvParseRow](#lotiviscsvparserowsrcparsejsstring--row).
+Fetches and parses the data from the csv files specified through the given `path`. The `row` argument works in a simulary manner as in [csvParseRow](#lotiviscsvparserowstring--row).
 
 ## Development
 
