@@ -83,3 +83,9 @@ it("csvParseRows(string) parses file data/csv.custom.csv", () => {
   assert.strictEqual(data[0].value, "1");
   assert.strictEqual(data[0].group, "group-1");
 });
+
+var csv = `
+label,value,date,location,group
+label-1,1,1999-01-01,paris,group-1
+label-1,2,1999-01-02,berlin,group-1
+`;

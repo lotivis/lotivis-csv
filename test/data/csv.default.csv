@@ -1,5 +1,5 @@
-label,value,date,location,group
-label-1,1,1999-01-01,paris,group-1
-label-1,2,1999-01-02,berlin,group-1
-label-2,3,1999-01-03,paris,group-2
-label-2,4,1999-01-04,berlin,group-2
+label,location,date,value,group
+label-1,paris,1999-01-01,1,group-1
+label-1,berlin,1999-01-02,2,group-1
+label-2,paris,1999-01-03,3,group-2
+label-2,berlin,1999-01-04,4,group-2

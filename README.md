@@ -1,9 +1,29 @@
-# lotivis-csv
+# lotivis-csv [![Node.js CI](https://github.com/lukasdanckwerth/lotivis-csv/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/lukasdanckwerth/lotivis-csv/actions/workflows/node.js.yml)
 
 This module provides functions for reading and writing [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) files with [lotivis](https://github.com/lukasdanckwerth/lotivis).
 
+To read CSV data use the [`csvParse`](./src/parse.js) function. Following the correct names the order of the headlines is variable.
+
+```js
+var text = `
+label,location,date,value,group
+label-1,paris,1999-01-01,1,group-1
+label-1,berlin,1999-01-02,2,group-1
+`;
+
+var data = lotivis.csvParse(text);
 ```
 
+When 
+
+```js
+var csv = `
+value,label,location,group,date
+1,label-1,paris,group-1,1999-01-01
+2,label-1,berlin,group-1,1999-01-02
+`;
+
+var data = lotivis.csvParse(csv);
 ```
 
 ## Installing
