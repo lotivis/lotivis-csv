@@ -98,9 +98,17 @@ Creates a csv string without headlines from the specified `data`. Optionally spe
 
 Fetches and parses the data from the csv files specified through the given `path`.
 
+```js
+lotivis.csvFetch("path/to/data.csv")
+    .then((data) => {
+        // do something with data ...
+    })
+    .catch((error) => { /* */});
+```
+
 ### lotivis.**[csvFetchRows](./src/fetch.js)**(path [, row])
 
-Fetches and parses the data from the csv files specified through the given `path`. The `row` argument works in a simulary manner as in [csvParseRow](#lotiviscsvparserowstring--row).
+Fetches and parses the data from the csv files specified through the given `path`. The `row` argument works in a simular manner as in [csvParseRow](#lotiviscsvparserowstring--row).
 
 ## Development
 
