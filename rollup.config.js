@@ -1,5 +1,5 @@
 import { terser } from "rollup-plugin-terser";
-import nodeResolve from "@rollup/plugin-node-resolve";
+import { default as nodeResolve } from "@rollup/plugin-node-resolve";
 import * as meta from "./package.json";
 
 const copyright = "Lukas Danckwerth";
@@ -24,6 +24,10 @@ const config = {
     ),
   },
   plugins: [nodeResolve()],
+  onwarn(message, warn) {
+    if (message.code === "CIRCULAR_DEPENDENCY") return;
+    warn(message);
+  },
 };
 
 export default [
