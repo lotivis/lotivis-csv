@@ -28,7 +28,7 @@ If you use npm, `npm install lotivis-csv`. You can also download the [latest rea
 
 ## API Reference
 
-### `lotivis.`**[`csvParse`](./src/parse.js)**`(string)`
+### lotivis\.**[`csvParse`](./src/parse.js)**`(string)`
 
 To read csv data use the [`csvParse`](./src/parse.js) function.
 
@@ -54,7 +54,7 @@ value,label,location,group,date
 var data = lotivis.csvParse(text);
 ```
 
-### `lotivis.`**[`csvParseRow`](./src/parse.js)**`(string [, row])`
+### lotivis\.**[`csvParseRow`](./src/parse.js)**`(string [, row])`
 
 To read csv data without headlines use the [`csvParseRows`](./src/parse.js) function. If the csv data is in the default order ([label,location,data,value[,group]](./src/parse.js)).
 
@@ -86,19 +86,19 @@ let data = csvParseRows(text, (row, index) => {
 });
 ```
 
-### `lotivis.`**[`csvRender`](./src/render.js)**`(data [, columns])`
+### lotivis.**[`csvRender`](./src/render.js)**(data [, columns])
 
 Creates a csv string from the specified `data`. Optionally specifiy the order of the columns with `columns`. The default order is [["label", "location", "date", "value", "group"]](./src/render.js).
 
-### `lotivis.`**[`csvRenderRows`](./src/render.js)**`(data [, columns])`
+### lotivis\.**[`csvRenderRows`](./src/render.js)**(data [, columns])
 
 Creates a csv string without headlines from the specified `data`. Optionally specifiy the order of the columns with `columns`.
 
-### `lotivis.`**[`csvFetch`](./src/fetch.js)**`(path)`
+### lotivis\.**[`csvFetch`](./src/fetch.js)**(path)
 
 Fetches and parses the data from the csv files specified through the given `path`.
 
-### `lotivis.`**[`csvFetchRows`](./src/fetch.js)**`(path [, row])`
+### lotivis\.**[`csvFetchRows`](./src/fetch.js)**(path [, row])
 
 Fetches and parses the data from the csv files specified through the given `path`. The `row` argument works in a simulary manner as in [csvParseRow](#lotiviscsvparserowstring--row).
 
