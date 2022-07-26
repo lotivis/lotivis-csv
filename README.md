@@ -94,19 +94,19 @@ Creates a csv string from the specified `data`. Optionally specifiy the order of
 
 Creates a csv string without headlines from the specified `data`. Optionally specifiy the order of the columns with `columns`.
 
-### lotivis.**[csvFetch](./src/fetch.js)**(path)
+### lotivis.**[fetchCSV](./src/fetch.js)**(path)
 
 Fetches and parses the data from the csv files specified through the given `path`.
 
 ```js
-lotivis.csvFetch("path/to/data.csv")
+lotivis.fetchCSV("path/to/data.csv")
     .then((data) => {
         // do something with data ...
     })
     .catch((error) => { /* */});
 ```
 
-### lotivis.**[csvFetchRows](./src/fetch.js)**(path [, row])
+### lotivis.**[fetchCSVRows](./src/fetch.js)**(path [, row])
 
 Fetches and parses the data from the csv files specified through the given `path`. The `row` argument works in a simular manner as in [csvParseRow](#lotiviscsvparserowstring--row).
 
